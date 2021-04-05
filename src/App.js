@@ -16,7 +16,7 @@ function App() {
   return (
     <>
       <UsersStoreProvider>
-        <Router basename='/react-router-dom-test-project'>
+        <Router>
           <Navbar />
           <Switch>
             <Route exact path='/about' component={About} />
