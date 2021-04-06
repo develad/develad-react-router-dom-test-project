@@ -1,4 +1,4 @@
-![Preview-image-site](public\assets\perview-github.png)
+![Preview-image-site](https://raw.githubusercontent.com/develad/develad-react-router-dom-test-project/main/public/assets/perview-github.png)
 
 # [Live demo site 👽🤖😺](https://react-dom-test.netlify.app/)
 
