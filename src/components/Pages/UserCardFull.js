@@ -7,16 +7,26 @@ function UserCard({ user }) {
   return (
     <>
       <Card>
-        <Img
-          src={user.picture.large}
-          alt='user'
-          onClick={() => history.push('/')}
-        />
-        <h1>
-          {user.name.first} {user.name.last}
-        </h1>
+        <div
+          style={{
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            justifyContent: 'center',
+            width: '100%',
+          }}
+        >
+          <Img
+            src={user.picture.large}
+            alt='user'
+            onClick={() => history.push('/')}
+          />
+          <h1>
+            {user.name.first} {user.name.last}
+          </h1>
+        </div>
         <h3>Country: {user.location.country}</h3>
-        <h2>E-mail: {user.email}</h2>
+        <h4>E-mail: {user.email}</h4>
         <h3>Gender: {user.gender}</h3>
         <h3>Phone: {user.phone}</h3>
         <h3>
@@ -58,6 +68,8 @@ const Card = styled.div`
   z-index: 1;
 
   @media (max-width: 600px) {
-    max-width: 300px;
+    max-width: 250px;
+    align-items: flex-start;
+    overflow: hidden;
   }
 `;
