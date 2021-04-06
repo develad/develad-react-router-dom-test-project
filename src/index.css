@@ -13,14 +13,6 @@ body {
   align-items: center;
   justify-content: center;
   position: relative;
-  /* background: linear-gradient(
-    45deg,
-    #03001e,
-    #7303c0,
-    #ec38bc,
-    #cc5b0f
-  ); */
-
   background-color: rgb(39, 25, 66);
   font-family: 'Nunito', sans-serif;
   color: white;

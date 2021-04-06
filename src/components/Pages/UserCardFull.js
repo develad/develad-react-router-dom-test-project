@@ -15,8 +15,14 @@ function UserCard({ user }) {
         <h1>
           {user.name.first} {user.name.last}
         </h1>
-        <h2>{user.email}</h2>
         <h3>Country: {user.location.country}</h3>
+        <h2>E-mail: {user.email}</h2>
+        <h3>Gender: {user.gender}</h3>
+        <h3>Phone: {user.phone}</h3>
+        <h3>
+          Street: {user.location.street.name} {user.location.street.number}
+        </h3>
+        <h3>Postcode: {user.location.postcode}</h3>
       </Card>
     </>
   );
@@ -38,7 +44,7 @@ const Img = styled.img`
   }
 `;
 const Card = styled.div`
-  height: 300px;
+  min-height: 400px;
   width: 470px;
   display: flex;
   flex-direction: column;

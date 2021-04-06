@@ -1,3 +1,5 @@
+![Preview-image-site](public\assets\perview-github.png)
+
 # [Live demo site 👽🤖😺](https://react-dom-test.netlify.app/)
 
 # Getting Started with Create React App
