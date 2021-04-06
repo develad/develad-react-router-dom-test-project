@@ -21,12 +21,12 @@ function UserCard({ user }) {
             alt='user'
             onClick={() => history.push('/')}
           />
-          <h1>
+          <h1 style={{ marginTop: '1rem' }}>
             {user.name.first} {user.name.last}
           </h1>
         </div>
         <h3>Country: {user.location.country}</h3>
-        <h4>E-mail: {user.email}</h4>
+        <h3>E-mail: {user.email}</h3>
         <h3>Gender: {user.gender}</h3>
         <h3>Phone: {user.phone}</h3>
         <h3>
@@ -69,6 +69,7 @@ const Card = styled.div`
 
   @media (max-width: 600px) {
     max-width: 250px;
+    height: 60vh;
     align-items: flex-start;
     overflow: hidden;
   }
